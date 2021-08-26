@@ -31,3 +31,5 @@ override.tf.json
 backend.tf
 generated.tf
 .terraform.lock.hcl
+
+secrets.tf
