@@ -6,7 +6,7 @@ resource "aws_route53_zone" "umihico_com" {
   name    = local.domain
 }
 
-resource "aws_route53_record" "record_txt" {
+resource "aws_route53_record" "gsuite_domain_vertification" {
   zone_id = aws_route53_zone.umihico_com.zone_id
   name    = local.domain
   type    = "TXT"
