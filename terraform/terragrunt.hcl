@@ -12,6 +12,7 @@ remote_state {
     workspace_key_prefix = "workspaces"
     encrypt              = true
     dynamodb_table       = "terraform-lock-table-${get_aws_account_id()}"
+    role_arn             = "${get_env("TERRAGRUNT_IAM_ROLE")}"
   }
 }
 
@@ -22,6 +23,10 @@ generate "provider" {
   contents          = <<EOF
 provider "aws" {
   region = "ap-northeast-1"
+
+  assume_role {
+    role_arn     = "${get_env("TERRAGRUNT_IAM_ROLE")}"
+  }
 }
 EOF
 } 

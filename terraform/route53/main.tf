@@ -2,8 +2,7 @@ locals {
   domain = "umihico.com"
 }
 resource "aws_route53_zone" "umihico_com" {
-  comment = "HostedZone created by Route53 Registrar" # and imported
-  name    = local.domain
+  name = local.domain
 }
 
 resource "aws_route53_record" "gsuite_domain_vertification" {

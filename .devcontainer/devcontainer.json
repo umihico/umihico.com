@@ -20,6 +20,8 @@
 	"overrideCommand": false,
 	"runArgs": [
 		"--env-file",
+		".devcontainer/secrets.env",
+		"--env-file",
 		".devcontainer/devcontainer.env"
 	],
 	"remoteEnv": {
