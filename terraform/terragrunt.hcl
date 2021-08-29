@@ -8,7 +8,7 @@ remote_state {
   config = {
     region               = "ap-northeast-1"
     bucket               = "terraform-states-${get_aws_account_id()}"
-    key                  = "terraform.tfstate"
+    key                  = "${path_relative_to_include()}/terraform.tfstate"
     workspace_key_prefix = "workspaces"
     encrypt              = true
     dynamodb_table       = "terraform-lock-table-${get_aws_account_id()}"
