@@ -23,6 +23,16 @@ module "distribution" {
     }
   }
 
+  default_root_object = "index.html"
+
+  custom_error_response = {
+    value = {
+      error_code         = "403"
+      response_code      = "404"
+      response_page_path = "/404.html"
+    }
+  }
+
   default_cache_behavior = {
     target_origin_id       = "s3assets"
     viewer_protocol_policy = "redirect-to-https"
