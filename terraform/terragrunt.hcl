@@ -28,5 +28,13 @@ provider "aws" {
     role_arn     = "${get_env("TERRAGRUNT_IAM_ROLE")}"
   }
 }
+provider "aws" {
+  alias  = "use1"
+  region = "us-east-1"
+
+  assume_role {
+    role_arn     = "${get_env("TERRAGRUNT_IAM_ROLE")}"
+  }
+}
 EOF
 } 

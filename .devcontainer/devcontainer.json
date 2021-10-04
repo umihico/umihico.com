@@ -15,6 +15,7 @@
 	},
 	"mounts": [
 		"source=${localEnv:HOME}/.aws/credentials,target=/home/vscode/.aws/credentials,type=bind,consistency=cached",
+		"source=${localEnv:HOME}/.aws/config,target=/home/vscode/.aws/config,type=bind,consistency=cached",
 		"source=/var/run/docker.sock,target=/var/run/docker-host.sock,type=bind"
 	],
 	"overrideCommand": false,
