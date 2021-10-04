@@ -1,0 +1,66 @@
+
+body {
+	font-family: Andale Mono,AndaleMono,monospace; 
+  background-color: black;
+  line-height: 1;
+}
+
+.split-column { 
+  float: left;
+}
+.split-column-left { 
+}
+.split-column-right { 
+}
+
+.text-red {
+  color: #ff4b00 ;
+}
+.text-yellowred {
+  color: #f6aa00 ;
+}
+.text-yellow {
+  color: #f2e700 ;
+}
+.text-green {
+  color: #00b06b ;
+}
+.text-blue {
+  color: #1971ff ;
+}
+.text-redpurple {
+  color: #990099 ;
+}
+.text-white {
+  color: #ffffff ;
+}
+.text-black {
+  color: #000000 ;
+}
+.background-red {
+   background-color: #ff4b00 ;
+}
+.background-yellowred {
+  background-color: #f6aa00 ;
+}
+.background-yellow {
+  background-color: #f2e700 ;
+}
+.background-green {
+  background-color: #00b06b ;
+}
+.background-blue {
+  background-color: #1971ff ;
+}
+.background-redpurple {
+  background-color: #990099 ;
+}
+.background-white {
+  background-color: #ffffff ;
+}
+.background-black {
+  background-color: #000000 ;
+}
+.shadow-letter {
+  color: #303030;
+}
